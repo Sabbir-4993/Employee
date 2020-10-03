@@ -21,10 +21,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('/employee', 'admin.create');
+//Route::view('/employee', 'admin.create');
 
 Route::resource('department', 'DepartmentController');
 
 Route::resource('role', 'RoleController');
+
+Route::resource('users', 'UserController');
 
 

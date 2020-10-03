@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
+//use App\User;
 
 class UserController extends Controller
 {
@@ -23,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.user.create');
     }
 
     /**
@@ -34,7 +36,32 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'department_id' => 'required',
+            'role_id' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png',
+            'start_form' => 'required',
+            'designation' => 'required'
+        ]);
+        $data = $request->all();
+        if ($request->hasFile('image')){
+            $image = $request->image->hashName();
+            $request->image->move(public_path('profile'),$image);
+        }
+        $data = $request->all();
+        dd($data);
+//        else{
+//            $image = 'avater2.png';
+//        }
+//        $data['name']= $request->firstname.' '.$request->lastname;
+//        $data['image']=$image;
+//        $data['password'] = bcrypt($request->password);
+//        User::create($data);
+//        return redirect()->back()->with('message','User Created Successfully');
     }
 
     /**
