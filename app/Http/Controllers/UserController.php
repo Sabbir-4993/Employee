@@ -40,7 +40,7 @@ class UserController extends Controller
             'firstname' => 'required',
             'lastname' => 'required',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string|min:3|confirmed',
             'department_id' => 'required',
             'role_id' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png',
@@ -52,16 +52,14 @@ class UserController extends Controller
             $image = $request->image->hashName();
             $request->image->move(public_path('profile'),$image);
         }
-        $data = $request->all();
-        dd($data);
-//        else{
-//            $image = 'avater2.png';
-//        }
-//        $data['name']= $request->firstname.' '.$request->lastname;
-//        $data['image']=$image;
-//        $data['password'] = bcrypt($request->password);
-//        User::create($data);
-//        return redirect()->back()->with('message','User Created Successfully');
+        else{
+            $image = 'avater2.png';
+        }
+        $data['name'] = $request->firstname.' '.$request->lastname;
+        $data['image']= $image;
+        $data['password'] = bcrypt($request->password);
+        User::create($data);
+        return redirect()->back()->with('message','User Created Successfully');
     }
 
     /**

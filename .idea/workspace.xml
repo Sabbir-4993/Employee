@@ -8,7 +8,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="" />
+    <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="User and Role Added">
+      <change afterPath="$PROJECT_DIR$/public/profile/avater2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +223,7 @@
       <workItem from="1601699049650" duration="124000" />
       <workItem from="1601699184465" duration="353000" />
       <workItem from="1601699615204" duration="13260000" />
-      <workItem from="1601717433522" duration="5956000" />
+      <workItem from="1601717433522" duration="8202000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
@@ -225,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601709528725</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User and Role Added">
+      <created>1601723688375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601723688375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +328,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added" />
-    <option name="LAST_COMMIT_MESSAGE" value="added" />
+    <MESSAGE value="User and Role Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="User and Role Added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="714" y="343" key="#Notifications" timestamp="1601707247931">
@@ -354,6 +369,11 @@
           <url>file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php</url>
           <line>19</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/admin/user/create.blade.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
