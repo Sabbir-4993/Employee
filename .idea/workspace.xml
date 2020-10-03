@@ -8,33 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Employee.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/9iwg4SQIMbRHsYD09j4E5swal3e7pSV36Oi3wTVX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/1228e17da5733fcc934a59ff5e726f2d6418ab77.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/33e722be06da62a055bede4cbe5827b52330b958.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/56e5ef8dbf21958d08fe8777d8d6695867139c88.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5ef10ba65c34eb1a1b5b827b3acb88cd4a45b05a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/6fefa0fbbc0c07c212a35f2e9d94da3757721a83.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/71b5001d4d135ae6fd53d83bc12e89450db4a26c.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c7dd0109405309d405006ab5aec47ac7e634e0e2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e6aa43045442998c2978aa01bea0891865e1eca1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +216,7 @@
       <workItem from="1601699049650" duration="124000" />
       <workItem from="1601699184465" duration="353000" />
       <workItem from="1601699615204" duration="13260000" />
-      <workItem from="1601717433522" duration="5721000" />
+      <workItem from="1601717433522" duration="5956000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
