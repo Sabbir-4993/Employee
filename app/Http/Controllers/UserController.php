@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Illuminate\Http\Request;
-//use App\User;
+use App\User;
 
 class UserController extends Controller
 {
@@ -15,7 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::get();
+        return view('admin.user.index',compact('users'));
     }
 
     /**
@@ -48,6 +48,7 @@ class UserController extends Controller
             'designation' => 'required'
         ]);
         $data = $request->all();
+//        dd($data);
         if ($request->hasFile('image')){
             $image = $request->image->hashName();
             $request->image->move(public_path('profile'),$image);
