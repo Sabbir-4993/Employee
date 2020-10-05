@@ -9,21 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="User and Role Added">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/3XjSkLiJUAzh8uOIl9P037mZGeAHr85RSakbmB36" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/0ef21bb2f8995f85702e5235a7b56fe2b5e0f230.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/116835a0949eb3454db1dc0fcb258c8866cd56a7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/b186d35ff169e1a204dd8f35f17635a9a6c8859d.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/department/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/department/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/9iwg4SQIMbRHsYD09j4E5swal3e7pSV36Oi3wTVX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/3XjSkLiJUAzh8uOIl9P037mZGeAHr85RSakbmB36" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/3XjSkLiJUAzh8uOIl9P037mZGeAHr85RSakbmB36" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +223,7 @@
       <workItem from="1601717433522" duration="8721000" />
       <workItem from="1601799147575" duration="2754000" />
       <workItem from="1601873425386" duration="2589000" />
-      <workItem from="1601881040421" duration="6282000" />
+      <workItem from="1601881040421" duration="7044000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
@@ -367,10 +356,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601716130538" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1601888991414">
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1601889758124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601888991414" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601889758124" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

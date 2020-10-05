@@ -30,6 +30,7 @@
                     </a>
                     <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+
                             <a class="nav-link collapsed" href="{{route('role.create')}}" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                 Create Role
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -40,15 +41,26 @@
                                     <a class="nav-link" href="{{route('role.index')}}">View Role</a>
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Role
+
+{{--                            <a class="nav-link collapsed" href="{{route('users.create')}}" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">--}}
+{{--                                Create User--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{ route('role.create') }}">Create Role</a>--}}
+{{--                                    <a class="nav-link" href="{{route('role.index')}}">View Role</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+                            <a class="nav-link collapsed" href="{{route('users.create')}}" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                Create Users
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="401.html">401 Page</a>
-                                    <a class="nav-link" href="404.html">404 Page</a>
-                                    <a class="nav-link" href="500.html">500 Page</a>
+                                    <a class="nav-link" href="{{ route('users.create') }}">Create User</a>
+                                    <a class="nav-link" href="{{route('users.index')}}">View Users</a>
                                 </nav>
                             </div>
                         </nav>
