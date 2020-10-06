@@ -11,7 +11,7 @@
                 <?php endif; ?>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo e(url('/')); ?>">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">All Users</li>
                     </ol>
                 </nav>
@@ -22,11 +22,11 @@
                         <th>Photo</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Address</th>
-                        <th>Mobile</th>
+                        <th>Designation</th>
                         <th>Role</th>
                         <th>Department</th>
-                        <th>Designation</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
                         <th>Start Date</th>
                         <th>Edit</th>
                         <th>Delete</th>
@@ -41,16 +41,16 @@
                             <tr>
                                 <td><?php echo e($key+1); ?></td>
                                 <td><img src="<?php echo e(asset('profile')); ?>/<?php echo e($user->image); ?>" width="100" alt=""></td>
-                                <td><?php echo e($user->name); ?></td>
-                                <td><?php echo e($user->email); ?></td>
-                                <td><?php echo e($user->address); ?></td>
-                                <td><?php echo e($user->mobile_number); ?></td>
-                                <td><?php echo e($user->department->name); ?></td>
-                                <td><?php echo e($user->role->name); ?></td>
-                                <td><?php echo e($user->designation); ?></td>
+                                <td class="text-center"><?php echo e($user->name); ?></td>
+                                <td class="text-center"><?php echo e($user->email); ?></td>
+                                <td class="text-center"><span class="badge badge-success"><?php echo e($user->designation); ?></span></td>
+                                <td class="text-center"><?php echo e($user->role->name ?? ''); ?></td>
+                                <td class="text-center"><?php echo e($user->department->name ?? ''); ?></td>
+                                <td class="text-center"><?php echo e($user->mobile_number); ?></td>
+                                <td class="text-center"><?php echo e($user->address); ?></td>
                                 <td><?php echo e($user->start_form); ?></td>
-                                <td><a href="<?php echo e(route('users.edit',[$user->id])); ?>"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
+                                <td class="text-center"><a href="<?php echo e(route('users.edit',[$user->id])); ?>"><i class="fas fa-edit"></i></a></td>
+                                <td class="text-center"><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -29,4 +29,7 @@ Route::resource('role', 'RoleController');
 
 Route::resource('users', 'UserController');
 
+Route::post('/new-users','UserController@newUsers')->name('new-users');
+
+
 

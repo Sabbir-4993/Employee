@@ -42,25 +42,14 @@
                                 </nav>
                             </div>
 
-
-
-
-
-
-
-
-
-
-
-
                             <a class="nav-link collapsed" href="<?php echo e(route('users.create')); ?>" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
                                 Create Users
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="<?php echo e(route('users.create')); ?>">Create User</a>
-                                    <a class="nav-link" href="<?php echo e(route('users.index')); ?>">View Users</a>
+                                    <a class="nav-link" href="<?php echo e(route('users.create')); ?>">Create Employee</a>
+                                    <a class="nav-link" href="<?php echo e(route('users.index')); ?>">View Employee</a>
                                 </nav>
                             </div>
                         </nav>

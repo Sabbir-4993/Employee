@@ -12,7 +12,7 @@
                 @endif
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">All Users</li>
                     </ol>
                 </nav>
@@ -23,11 +23,11 @@
                         <th>Photo</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Address</th>
-                        <th>Mobile</th>
+                        <th>Designation</th>
                         <th>Role</th>
                         <th>Department</th>
-                        <th>Designation</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
                         <th>Start Date</th>
                         <th>Edit</th>
                         <th>Delete</th>
@@ -42,16 +42,16 @@
                             <tr>
                                 <td>{{$key+1}}</td>
                                 <td><img src="{{asset('profile')}}/{{$user->image}}" width="100" alt=""></td>
-                                <td>{{$user->name}}</td>
-                                <td>{{$user->email}}</td>
-                                <td>{{$user->address}}</td>
-                                <td>{{$user->mobile_number}}</td>
-                                <td>{{$user->department->name}}</td>
-                                <td>{{$user->role->name}}</td>
-                                <td>{{$user->designation}}</td>
+                                <td class="text-center">{{$user->name}}</td>
+                                <td class="text-center">{{$user->email}}</td>
+                                <td class="text-center"><span class="badge badge-success">{{$user->designation}}</span></td>
+                                <td class="text-center">{{$user->role->name ?? ''}}</td>
+                                <td class="text-center">{{$user->department->name ?? ''}}</td>
+                                <td class="text-center">{{$user->mobile_number}}</td>
+                                <td class="text-center">{{$user->address}}</td>
                                 <td>{{$user->start_form}}</td>
-                                <td><a href="{{route('users.edit',[$user->id])}}"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
+                                <td class="text-center"><a href="{{route('users.edit',[$user->id])}}"><i class="fas fa-edit"></i></a></td>
+                                <td class="text-center"><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

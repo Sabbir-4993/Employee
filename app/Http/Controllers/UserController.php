@@ -34,31 +34,37 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
         $this->validate($request,[
-            'firstname' => 'required',
-            'lastname' => 'required',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:3|confirmed',
-            'department_id' => 'required',
-            'role_id' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
-            'start_form' => 'required',
-            'designation' => 'required'
+            'firstname'=>'required',
+            'lastname'=>'required',
+            'email'=>'required|string|email|max:255|unique:users',
+            'password'=>'required|string',
+            'mobile_number'=>'required',
+            'address'=>'required',
+            'department_id'=>'required',
+            'role_id'=>'required',
+            'designation'=>'required',
+            'start_form'=>'required',
+            'image'=>'mimes:jpeg,jpg,png',
         ]);
+
         $data = $request->all();
-//        dd($data);
+
         if ($request->hasFile('image')){
             $image = $request->image->hashName();
             $request->image->move(public_path('profile'),$image);
         }
         else{
-            $image = 'avater2.png';
+            $image = 'avater.png';
         }
+
         $data['name'] = $request->firstname.' '.$request->lastname;
         $data['image']= $image;
         $data['password'] = bcrypt($request->password);
+
         User::create($data);
         return redirect()->back()->with('message','User Created Successfully');
     }
@@ -82,7 +88,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('admin.user.edit', compact('user'));
     }
 
     /**
@@ -94,7 +101,38 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'name'=>'required',
+            'email'=>'required|string|email|max:255|unique:users,email,'.$id,
+            'mobile_number'=>'required',
+            'address'=>'required',
+            'department_id'=>'required',
+            'role_id'=>'required',
+            'designation'=>'required',
+            'start_form'=>'required',
+            'password'=>'required'
+        ]);
+
+        $data = $request->all();
+
+        $user = User::find($id);
+        if ($request->hasFile('image')){
+            $image = $request->image->hashName();
+            $request->image->move(public_path('profile'),$image);
+        }
+        else{
+            $image = $user->image = 'avater.png';
+        }
+        if($request->password){
+            $password = $request->password;
+        }else{
+            $password = $user->password;
+        }
+        $data['$image']=$image;
+        $data['$password']=bcrypt($password);
+        $user->update($data);
+        return redirect()->back()->with('message', 'User Updated Successfully');
+
     }
 
     /**
@@ -105,6 +143,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->route('users.index')->with('message', 'User Deleted Successfully');
     }
 }
