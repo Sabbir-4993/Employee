@@ -554,4 +554,5 @@
                 </div>
             </div>
         </div>
-    </main><?php /**PATH C:\xampp\htdocs\EMS\Employee\resources\views/admin/layouts/content.blade.php ENDPATH**/ ?>
+    </main>
+<?php /**PATH C:\xampp\htdocs\EMS\Employee\resources\views/admin/layouts/content.blade.php ENDPATH**/ ?>

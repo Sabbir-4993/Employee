@@ -13,23 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-//Route::view('/employee', 'admin.create');
+Route::group(['middleware'=>'auth'], function(){
 
-Route::resource('department', 'DepartmentController');
+    Route::get('/', function () {
+        return view('welcome');
+    });
 
-Route::resource('role', 'RoleController');
+    Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('users', 'UserController');
+    Route::resource('department', 'DepartmentController');
 
-Route::post('/new-users','UserController@newUsers')->name('new-users');
+    Route::resource('role', 'RoleController');
 
+    Route::resource('users', 'UserController');
 
+});
 
+Auth::routes();
