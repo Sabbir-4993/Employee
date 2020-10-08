@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-
 Route::group(['middleware'=>'auth'], function(){
 
     Route::get('/', function () {
@@ -31,6 +30,8 @@ Route::group(['middleware'=>'auth'], function(){
     Route::resource('role', 'RoleController');
 
     Route::resource('users', 'UserController');
+
+    Route::resource('permissions', 'PermissionController');
 
 });
 

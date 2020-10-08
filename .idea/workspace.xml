@@ -9,48 +9,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="User and Role Added">
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/jNnHwW5OggRq1kbbKGzTwu1XbXPbIS1ZPKbE2DZZ" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/320135b50f97264866eb08b9fa5100922cf25554.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c90756c9e8ff74451950dec9a7e786a7626802ad.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/3a/e1/3ae17dec32455b87e37ada0f32cf1bab1330cc12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/a8/fb/a8fb8a8c6b660d39d5e3a0da2255addc4e4227a9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/1v8m60hhipZ2SMUbyHT61Q5WNBwrRKfdQ42XaXfX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/0ef21bb2f8995f85702e5235a7b56fe2b5e0f230.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/1228e17da5733fcc934a59ff5e726f2d6418ab77.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/12cd728414655d7600abea54a70f23b28a6b25c6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/33e722be06da62a055bede4cbe5827b52330b958.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/5ef10ba65c34eb1a1b5b827b3acb88cd4a45b05a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/b186d35ff169e1a204dd8f35f17635a9a6c8859d.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/c7dd0109405309d405006ab5aec47ac7e634e0e2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e6aa43045442998c2978aa01bea0891865e1eca1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/838487c0c515c422b18f2b45fc7e2edea17d2fa5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MunWbNoYFcMQL7kOjAMHJUe7yzorC9GkFgD5lC3H" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/0d7893faa27a3dc3bf55a63f88a812475c439d23.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/0ef21bb2f8995f85702e5235a7b56fe2b5e0f230.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/116835a0949eb3454db1dc0fcb258c8866cd56a7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/1228e17da5733fcc934a59ff5e726f2d6418ab77.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/33e722be06da62a055bede4cbe5827b52330b958.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/45298f8f901c2997576a20033865eaf8c25009ac.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/5ef10ba65c34eb1a1b5b827b3acb88cd4a45b05a.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/6fefa0fbbc0c07c212a35f2e9d94da3757721a83.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6fefa0fbbc0c07c212a35f2e9d94da3757721a83.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/b186d35ff169e1a204dd8f35f17635a9a6c8859d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/c7dd0109405309d405006ab5aec47ac7e634e0e2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/cdf7eea26fd1f6c8e12684f5d3c65425438b86e3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/e6aa43045442998c2978aa01bea0891865e1eca1.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +249,10 @@
       <workItem from="1601881040421" duration="9228000" />
       <workItem from="1601957209676" duration="23501000" />
       <workItem from="1602045910263" duration="2921000" />
-      <workItem from="1602058279095" duration="6620000" />
+      <workItem from="1602058279095" duration="8653000" />
+      <workItem from="1602068763936" duration="1392000" />
+      <workItem from="1602130546260" duration="6669000" />
+      <workItem from="1602154179804" duration="2810000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
@@ -292,7 +279,27 @@
       <map>
         <entry key="1">
           <value>
-            <State />
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/xampp/htdocs/EMS/Employee/bootstrap/cache/data" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="2">
@@ -365,6 +372,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -374,10 +386,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="User and Role Added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="714" y="343" key="#Notifications" timestamp="1601707247931">
+    <state x="714" y="343" key="#Notifications" timestamp="1602068798333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1601707247931" />
+    <state x="714" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1602068798333" />
     <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601883894967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -390,22 +402,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601701373431" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602064286220">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1602067016722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602064286220" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602064286220">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602067016722" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1602067016722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602064286220" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602064286220">
+    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602067016722" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1602067016722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602064286220" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602064286220">
+    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602067016722" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1602067016722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602064286220" />
+    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602067016722" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601713053754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -418,10 +430,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601716130538" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1602064901605">
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1602157229599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602064901605" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602157229599" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,6 +442,11 @@
           <url>file://$PROJECT_DIR$/resources/views/admin/department/create.blade.php</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/UserController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
