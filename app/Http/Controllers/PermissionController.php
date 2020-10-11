@@ -14,7 +14,8 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        //
+        $permissions = Permission::get();
+        return view('admin.permission.index', compact('permissions'));
     }
 
     /**
@@ -61,7 +62,8 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $permission = Permission::find($id);
+        return view('admin.permission.edit', compact('permission'));
     }
 
     /**
@@ -73,7 +75,10 @@ class PermissionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $permission = Permission::find($id);
+        $data = $request->all();
+        $permission->update($data);
+        return redirect()->route('permissions.index')->with('message', 'Permission Update Successfully');
     }
 
     /**

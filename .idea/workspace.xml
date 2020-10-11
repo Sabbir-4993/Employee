@@ -9,32 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="User and Role Added">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/3a/e1/3ae17dec32455b87e37ada0f32cf1bab1330cc12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/a8/fb/a8fb8a8c6b660d39d5e3a0da2255addc4e4227a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/1v8m60hhipZ2SMUbyHT61Q5WNBwrRKfdQ42XaXfX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/0ef21bb2f8995f85702e5235a7b56fe2b5e0f230.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/1228e17da5733fcc934a59ff5e726f2d6418ab77.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/12cd728414655d7600abea54a70f23b28a6b25c6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/33e722be06da62a055bede4cbe5827b52330b958.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5ef10ba65c34eb1a1b5b827b3acb88cd4a45b05a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/a9c2202a0f19e37136364033c43324964176271f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/b186d35ff169e1a204dd8f35f17635a9a6c8859d.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c7dd0109405309d405006ab5aec47ac7e634e0e2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/da21c8d5dea675d9816876c585ccc006c28abd56.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e6aa43045442998c2978aa01bea0891865e1eca1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/Dy4DlRHPVigbfhksZJcBtyBxaKrEHzUR3KEGRMyK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/04bba781b3197b2c385c7ab4f1d7c53e904c2807.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e3798ef9b8fc93598e3b46076153f04e4975cdb2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/1cfdf08e60f27e3ae98b29bed536b19ce9c86f35.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6fefa0fbbc0c07c212a35f2e9d94da3757721a83.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6fefa0fbbc0c07c212a35f2e9d94da3757721a83.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/1v8m60hhipZ2SMUbyHT61Q5WNBwrRKfdQ42XaXfX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/12cd728414655d7600abea54a70f23b28a6b25c6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/12cd728414655d7600abea54a70f23b28a6b25c6.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +237,10 @@
       <workItem from="1602058279095" duration="8653000" />
       <workItem from="1602068763936" duration="1392000" />
       <workItem from="1602130546260" duration="6669000" />
-      <workItem from="1602154179804" duration="2810000" />
+      <workItem from="1602154179804" duration="3410000" />
+      <workItem from="1602401255907" duration="1358000" />
+      <workItem from="1602405599866" duration="3131000" />
+      <workItem from="1602414582801" duration="3406000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
@@ -394,10 +382,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601883894967" />
-    <state x="210" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601978949493">
+    <state x="210" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602417450102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="210" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601978949493" />
+    <state x="210" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602417450102" />
     <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1601701373431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -430,10 +418,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601716130538" />
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1602157229599">
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1602417418585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602157229599" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602417418585" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

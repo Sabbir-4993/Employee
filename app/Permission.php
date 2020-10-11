@@ -10,4 +10,8 @@ class Permission extends Model
     Protected $casts = [
       'name' => 'array',
     ];
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
 }
