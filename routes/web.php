@@ -33,6 +33,8 @@ Route::group(['middleware'=>['auth','has.permission']], function(){
 
     Route::resource('permissions', 'PermissionController');
 
+    Route::resource('leaves', 'LeaveController');
+
 });
 
 Auth::routes();
