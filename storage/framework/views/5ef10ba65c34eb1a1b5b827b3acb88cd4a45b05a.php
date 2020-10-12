@@ -35,11 +35,17 @@
                                 <td><?php echo e($key+1); ?></td>
                                 <td><?php echo e($department->name); ?></td>
                                 <td><?php echo e($department->description); ?></td>
-                                <td><a href="<?php echo e(route('department.edit',[$department->id])); ?>"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
-
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['department']['can-edit'])): ?>
+                                        <a href="<?php echo e(route('department.edit',[$department->id])); ?>"><i class="fas fa-edit"></i></a>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['department']['can-delete'])): ?>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal<?php echo e($department->id); ?>"><i class="fas fa-trash"></i></a>
+                                    <?php endif; ?>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="exampleModal<?php echo e($department->id); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <form action="<?php echo e(route('department.destroy',[$department->id])); ?>" method="post">
                                             <?php echo csrf_field(); ?>

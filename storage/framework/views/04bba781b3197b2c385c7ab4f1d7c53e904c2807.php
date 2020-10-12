@@ -21,6 +21,7 @@
                         <th>SN</th>
                         <th>Name</th>
                         <th>Edit</th>
+                        <th>Delete</th>
 
                     </tr>
                     </thead>
@@ -33,12 +34,19 @@
                             <tr>
                                 <td><?php echo e($key+1); ?></td>
                                 <td><?php echo e($permission->role->name); ?></td>
-                                <td><a href="<?php echo e(route('permissions.edit',[$permission->id])); ?>"><i class="fas fa-edit"></i></a></td>
-
-                                <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['permission']['can-edit'])): ?>
+                                        <a href="<?php echo e(route('permissions.edit',[$permission->id])); ?>"><i class="fas fa-edit"></i></a>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['permission']['can-delete'])): ?>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal<?php echo e($permission->id); ?>"><i class="fas fa-trash"></i></a>
+                                    <?php endif; ?>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal<?php echo e($permission->id); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <form action="#" method="post">
+                                            <form action="<?php echo e(route('permissions.destroy',[$permission->id])); ?>" method="post">
                                                 <?php echo csrf_field(); ?>
                                                 <?php echo e(method_field('DELETE')); ?>
 
@@ -62,7 +70,7 @@
                                         </div>
                                     </div>
                                     <!-- Modal End -->
-
+                                </td>
                             </tr>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     <?php else: ?>

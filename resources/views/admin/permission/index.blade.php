@@ -22,6 +22,7 @@
                         <th>SN</th>
                         <th>Name</th>
                         <th>Edit</th>
+                        <th>Delete</th>
 
                     </tr>
                     </thead>
@@ -34,12 +35,19 @@
                             <tr>
                                 <td>{{$key+1}}</td>
                                 <td>{{$permission->role->name}}</td>
-                                <td><a href="{{route('permissions.edit',[$permission->id])}}"><i class="fas fa-edit"></i></a></td>
-
-                                <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <td>
+                                    @if(isset(auth()->user()->role->permission['name']['permission']['can-edit']))
+                                        <a href="{{route('permissions.edit',[$permission->id])}}"><i class="fas fa-edit"></i></a>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(isset(auth()->user()->role->permission['name']['permission']['can-delete']))
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal{{$permission->id}}"><i class="fas fa-trash"></i></a>
+                                    @endif
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal{{$permission->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <form action="#" method="post">
+                                            <form action="{{route('permissions.destroy',[$permission->id])}}" method="post">
                                                 @csrf
                                                 {{method_field('DELETE')}}
 
@@ -62,7 +70,7 @@
                                         </div>
                                     </div>
                                     <!-- Modal End -->
-{{--                                </td>--}}
+                                </td>
                             </tr>
                         @endforeach
                     @else

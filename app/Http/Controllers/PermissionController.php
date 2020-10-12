@@ -78,6 +78,7 @@ class PermissionController extends Controller
         $permission = Permission::find($id);
         $data = $request->all();
         $permission->update($data);
+//        dd($data);
         return redirect()->route('permissions.index')->with('message', 'Permission Update Successfully');
     }
 
@@ -89,6 +90,7 @@ class PermissionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Permission::find($id)->delete();
+        return redirect()->back()->with('message','Permission Deleted');
     }
 }

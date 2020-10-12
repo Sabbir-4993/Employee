@@ -36,11 +36,17 @@
                                 <td>{{$key+1}}</td>
                                 <td>{{$department->name}}</td>
                                 <td>{{$department->description}}</td>
-                                <td><a href="{{route('department.edit',[$department->id])}}"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
-
+                                <td>
+                                    @if(isset(auth()->user()->role->permission['name']['department']['can-edit']))
+                                        <a href="{{route('department.edit',[$department->id])}}"><i class="fas fa-edit"></i></a>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if(isset(auth()->user()->role->permission['name']['department']['can-delete']))
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal{{$department->id}}"><i class="fas fa-trash"></i></a>
+                                    @endif
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="exampleModal{{$department->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <form action="{{route('department.destroy',[$department->id])}}" method="post">
                                             @csrf

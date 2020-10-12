@@ -50,9 +50,14 @@
                                 <td class="text-center">{{$user->mobile_number}}</td>
                                 <td class="text-center">{{$user->address}}</td>
                                 <td>{{$user->start_form}}</td>
-                                <td class="text-center"><a href="{{route('users.edit',[$user->id])}}"><i class="fas fa-edit"></i></a></td>
-                                <td class="text-center"><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
-
+                                <td class="text-center">
+                                    @if(isset(auth()->user()->role->permission['name']['user']['can-edit']))
+                                        <a href="{{route('users.edit',[$user->id])}}"><i class="fas fa-edit"></i></a></td>
+                                    @endif
+                                <td class="text-center">
+                                    @if(isset(auth()->user()->role->permission['name']['user']['can-delete']))
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
+                                    @endif
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">

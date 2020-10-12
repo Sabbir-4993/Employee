@@ -35,9 +35,15 @@
                                 <td><?php echo e($key+1); ?></td>
                                 <td><?php echo e($role->name); ?></td>
                                 <td><?php echo e($role->description); ?></td>
-                                <td><a href="<?php echo e(route('role.edit',[$role->id])); ?>"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
-
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['role']['can-edit'])): ?>
+                                        <a href="<?php echo e(route('role.edit',[$role->id])); ?>"><i class="fas fa-edit"></i></a>
+                                    <?php endif; ?>
+                                </td>
+                                <td>
+                                    <?php if(isset(auth()->user()->role->permission['name']['role']['can-delete'])): ?>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash"></i></a>
+                                    <?php endif; ?>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
