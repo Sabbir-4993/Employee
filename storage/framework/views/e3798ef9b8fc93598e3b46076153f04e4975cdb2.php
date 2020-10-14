@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -65,7 +67,7 @@
                                     </tbody>
                                 </table>
                                 <?php if(isset(auth()->user()->role->permission['name']['permission']['can-edit'])): ?>
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="submit" class="btn btn-primary">Update</button>
                                 <?php endif; ?>
                                 <a href="<?php echo e(route('permissions.index')); ?>" class="float-right">Back</a>
                             </div>

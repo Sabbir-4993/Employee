@@ -81,6 +81,21 @@
                                     @endif
                                 </nav>
                             </div>
+
+                            <a class="nav-link collapsed" href="{{route('leaves.create')}}" data-toggle="collapse" data-target="#pagesCollapseLeave" aria-expanded="false" aria-controls="pagesCollapseError">
+                                Leaves
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseLeave" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="{{ route('leaves.create') }}">Create Leave</a>
+                                        <a class="nav-link" href="{{route('leaves.index')}}">View Leave</a>
+{{--                                    @if(isset(auth()->user()->role->permission['name']['permission']['can-add']))--}}
+{{--                                    @endif--}}
+{{--                                    @if(isset(auth()->user()->role->permission['name']['permission']['can-list']))--}}
+{{--                                    @endif--}}
+                                </nav>
+                            </div>
                         </nav>
                     </div>
 

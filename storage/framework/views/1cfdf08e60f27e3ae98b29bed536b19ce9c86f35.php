@@ -81,6 +81,21 @@
                                     <?php endif; ?>
                                 </nav>
                             </div>
+
+                            <a class="nav-link collapsed" href="<?php echo e(route('leaves.create')); ?>" data-toggle="collapse" data-target="#pagesCollapseLeave" aria-expanded="false" aria-controls="pagesCollapseError">
+                                Leaves
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseLeave" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="<?php echo e(route('leaves.create')); ?>">Create Leave</a>
+                                        <a class="nav-link" href="<?php echo e(route('leaves.index')); ?>">View Leave</a>
+
+
+
+
+                                </nav>
+                            </div>
                         </nav>
                     </div>
 

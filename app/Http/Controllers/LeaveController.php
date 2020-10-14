@@ -14,7 +14,8 @@ class LeaveController extends Controller
      */
     public function index()
     {
-        //
+        $leaves = Leave::latest()->get();
+        return view('admin.leave.index', compact('leaves'));
     }
 
     /**
@@ -24,7 +25,8 @@ class LeaveController extends Controller
      */
     public function create()
     {
-        return view('admin.leave.create');
+        $leaves = Leave::latest()->where('user_id',auth()->user()->id)->get();
+        return view('admin.leave.create',compact('leaves'));
     }
 
     /**
@@ -33,6 +35,7 @@ class LeaveController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
         $this->validate($request,[
@@ -41,12 +44,11 @@ class LeaveController extends Controller
             'type'=>'required',
             'description'=>'required'
         ]);
-        $data['user_id'] = auth()->user()->id;
-        $data['status'] = '0';
-        $data['message'] = '';
         $data = $request->all();
+        $data['user_id'] = auth()->id();
+        $data['message'] = '';
+        $data['status'] = '0';
         Leave::Create($data);
-//        dd($data);
         return redirect()->back()->with('message','Leave Submitted!!!');
     }
 
@@ -69,7 +71,8 @@ class LeaveController extends Controller
      */
     public function edit($id)
     {
-        //
+        $leave = Leave::find($id);
+        return view('admin.leave.edit',compact('leave'));
     }
 
     /**
@@ -81,7 +84,19 @@ class LeaveController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'form'=>'required',
+            'to'=>'required',
+            'description'=>'required',
+            'type'=>'required'
+        ]);
+        $data = $request->all();
+        $leave = Leave::find($id);
+        $data['user_id'] = auth()->id();
+        $data['message'] = '';
+        $data['status'] = '0';
+        $leave->update($data);
+        return redirect()->route('leaves.create')->with('message', 'Leave Update Successfully!!!');
     }
 
     /**
@@ -92,6 +107,22 @@ class LeaveController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Leave::find($id)->delete();
+        return redirect()->route('leaves.create')->with('message', 'Leave Deleted Successfully');
+    }
+
+    public function acceptReject(Request $request, $id){
+
+        $status = $request->status;
+        $message = $request->message;
+        $leave = Leave::find($id);
+
+        $leave->update([
+
+            'status' => $status,
+            'message' => $message,
+
+        ]);
+        return redirect()->route('leaves.index')->with('message','Leave Application Update!!');
     }
 }
