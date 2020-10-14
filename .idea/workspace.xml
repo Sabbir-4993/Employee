@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e544272-3a50-4eb3-9d19-2f322d6b77a9" name="Default Changelist" comment="User and Role Added">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/storage/framework/sessions/QFCCQt3MOAoELhcQI1eIoh6pQX47BMa09L4unhE9" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/storage/framework/views/74a1683c0927b51b48d3f7944ac6631a68f45383.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/storage/framework/views/99b330d283e3f0ceb7c3f613c644af971d66e033.php" afterDir="false" />
@@ -33,6 +34,12 @@
       <change beforePath="$PROJECT_DIR$/storage/framework/views/e3798ef9b8fc93598e3b46076153f04e4975cdb2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e3798ef9b8fc93598e3b46076153f04e4975cdb2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/RWEQsTnbcPy15uZyiDPr7KbiZ3aU3Q0BKB1Zdn64" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/RWEQsTnbcPy15uZyiDPr7KbiZ3aU3Q0BKB1Zdn64" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e53fe90b725927fa741438d76e242afd31e93b75.php" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,11 +260,15 @@
       <workItem from="1602401255907" duration="1358000" />
       <workItem from="1602405599866" duration="3131000" />
       <workItem from="1602414582801" duration="3525000" />
+<<<<<<< Updated upstream
       <workItem from="1602477799267" duration="15441000" />
       <workItem from="1602517007503" duration="8271000" />
       <workItem from="1602650208645" duration="12678000" />
       <workItem from="1602674946608" duration="156000" />
       <workItem from="1602675160361" duration="1463000" />
+=======
+      <workItem from="1602477799267" duration="17235000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1601709528725</created>
