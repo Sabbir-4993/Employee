@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -63,6 +61,14 @@
                                             <td><input type="checkbox" name="name[permission][can-delete]" <?php if(isset($permission['name']['permission']['can-delete'])): ?> checked <?php endif; ?> value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-view]" <?php if(isset($permission['name']['permission']['can-view'])): ?> checked <?php endif; ?> value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-list]" <?php if(isset($permission['name']['permission']['can-list'])): ?> checked <?php endif; ?> value="1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leave Approval</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><input type="checkbox" name="name[leave][can-list]" <?php if(isset($permission['name']['leave']['can-list'])): ?> checked <?php endif; ?> value="1"></td>
                                         </tr>
                                     </tbody>
                                 </table>

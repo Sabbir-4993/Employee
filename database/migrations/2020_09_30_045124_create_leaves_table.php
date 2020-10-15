@@ -19,7 +19,7 @@ class CreateLeavesTable extends Migration
             $table->date('form');
             $table->date('to');
             $table->string('type');
-            $table->string('description');
+            $table->text('description');
             $table->integer('status')->default(0);
             $table->text('message');
             $table->timestamps();

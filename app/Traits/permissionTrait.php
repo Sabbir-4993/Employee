@@ -36,5 +36,10 @@ trait permissionTrait{
         if (!isset(auth()->user()->role->permission['name']['permission']['can-list']) && \Route::is('permissions.index')){
             return abort(401);
         }
+
+        //for leave
+        if (!isset(auth()->user()->role->permission['name']['leave']['can-list']) && \Route::is('leaves.index')){
+            return abort(401);
+        }
     }
 }

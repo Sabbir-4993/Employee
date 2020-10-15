@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header">{{ __('Leave Approval') }}</div>
 
                     <div class="card-body">
                         <table class="table">
@@ -67,12 +67,12 @@
                                                             </div>
                                                             <div class="form-group">
                                                                 <label for="">Message</label>
-                                                                <textarea name="message" class="form-control" placeholder="Message" id="" cols="5" rows="2"></textarea>
+                                                                <textarea name="message" class="form-control" placeholder="Message" id="" cols="5" rows="2" required=""></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="submit" class="btn btn-danger">Update</button>
+                                                            <button type="submit" class="btn btn-success">Update</button>
                                                         </div>
                                                     </div>
                                                 </form>
