@@ -13,7 +13,8 @@
 
                     <div class="sb-sidenav-menu-heading">Interface</div>
 
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDepartment" aria-expanded="false" aria-controls="collapseLayouts">
+                    
+                    <a class="nav-link collapsed" href="<?php echo e(route('department.create')); ?>" data-toggle="collapse" data-target="#collapseDepartment" aria-expanded="false" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                         Departments
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -37,6 +38,7 @@
                     <div class="collapse" id="collapseUser" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
 
+                            
                             <a class="nav-link collapsed" href="<?php echo e(route('role.create')); ?>" data-toggle="collapse" data-target="#pagesCollapseRole" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                 Roles
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -52,8 +54,9 @@
                                 </nav>
                             </div>
 
+                            
                             <a class="nav-link collapsed" href="<?php echo e(route('users.create')); ?>" data-toggle="collapse" data-target="#pagesCollapseUser" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Users
+                                Employee
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="pagesCollapseUser" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
@@ -67,7 +70,24 @@
                                 </nav>
                             </div>
 
-                            <a class="nav-link collapsed" href="<?php echo e(route('permissions.create')); ?>" data-toggle="collapse" data-target="#pagesCollapsePermission" aria-expanded="false" aria-controls="pagesCollapseError">
+                            
+                            <a class="nav-link collapsed" href="<?php echo e(route('leaves.create')); ?>" data-toggle="collapse" data-target="#pagesCollapseLeave" aria-expanded="false" aria-controls="pagesCollapseError">
+                                Leaves
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseLeave" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo e(route('leaves.create')); ?>">Create Leave</a>
+                                    
+                                    
+                                    <?php if(isset(auth()->user()->role->permission['name']['leave']['can-list'])): ?>
+                                        <a class="nav-link" href="<?php echo e(route('leaves.index')); ?>">View Leave</a>
+                                    <?php endif; ?>
+                                </nav>
+                            </div>
+
+                            
+                            <a class="nav-link collapsed" href="<?php echo e(route('requisitions.create')); ?>" data-toggle="collapse" data-target="#pagesCollapsePermission" aria-expanded="false" aria-controls="pagesCollapseError">
                                 Permissions
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -81,26 +101,51 @@
                                     <?php endif; ?>
                                 </nav>
                             </div>
+
                         </nav>
                     </div>
 
-                    <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseRequisition" aria-expanded="false" aria-controls="collapseLayouts">
+                    
+                    <a class="nav-link collapsed" href="<?php echo e(route('requisitions.create')); ?>" data-toggle="collapse" data-target="#collapseRequisition" aria-expanded="false" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                         Requisition
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapseRequisition" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="">Create</a>
-                            <a class="nav-link" href="">View</a>
+                            <?php if(isset(auth()->user()->role->permission['name']['requisition']['can-add'])): ?>
+                                <a class="nav-link" href="<?php echo e(route('requisitions.create')); ?>">Create</a>
+                            <?php endif; ?>
+
+                            <?php if(isset(auth()->user()->role->permission['name']['requisition']['can-list'])): ?>
+                                <a class="nav-link" href="<?php echo e(route('requisitions.index')); ?>">View</a>
+                            <?php endif; ?>
                         </nav>
                     </div>
+
+                    
+                    <a class="nav-link collapsed" href="<?php echo e(route('projects.create')); ?>" data-toggle="collapse" data-target="#collapseProject" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Project
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseProject" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <?php if(isset(auth()->user()->role->permission['name']['project']['can-add'])): ?>
+                                <a class="nav-link" href="<?php echo e(route('projects.create')); ?>">Create</a>
+                            <?php endif; ?>
+                             <?php if(isset(auth()->user()->role->permission['name']['project']['can-list'])): ?>
+                                <a class="nav-link" href="<?php echo e(route('projects.index')); ?>">View</a>
+                             <?php endif; ?>
+                        </nav>
+                    </div>
+
                     <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="#">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                         Charts
                     </a>
-                    <a class="nav-link" href="tables.html">
+                    <a class="nav-link" href="#">
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                         Tables
                     </a>

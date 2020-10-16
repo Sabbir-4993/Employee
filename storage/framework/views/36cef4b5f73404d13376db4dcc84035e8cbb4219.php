@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -82,12 +80,36 @@ unset($__errorArgs, $__bag); ?>
                                             <td><input type="checkbox" name="name[user][can-list]" value="1"></td>
                                         </tr>
                                         <tr>
+                                            <td>Project</td>
+                                            <td><input type="checkbox" name="name[project][can-add]" value="1"></td>
+                                            <td><input type="checkbox" name="name[project][can-edit]" value="1"></td>
+                                            <td><input type="checkbox" name="name[project][can-delete]" value="1"></td>
+                                            <td><input type="checkbox" name="name[project][can-view]" value="1"></td>
+                                            <td><input type="checkbox" name="name[project][can-list]" value="1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Requisition</td>
+                                            <td><input type="checkbox" name="name[requisition][can-add]" value="1"></td>
+                                            <td><input type="checkbox" name="name[requisition][can-edit]" value="1"></td>
+                                            <td><input type="checkbox" name="name[requisition][can-delete]" value="1"></td>
+                                            <td><input type="checkbox" name="name[requisition][can-view]" value="1"></td>
+                                            <td><input type="checkbox" name="name[requisition][can-list]" value="1"></td>
+                                        </tr>
+                                        <tr>
                                             <td>Permission</td>
                                             <td><input type="checkbox" name="name[permission][can-add]" value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-edit]" value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-delete]" value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-view]" value="1"></td>
                                             <td><input type="checkbox" name="name[permission][can-list]" value="1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Leave Approval</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><input type="checkbox" name="name[leave][can-list]" value="1"></td>
                                         </tr>
                                     </tbody>
                                 </table>

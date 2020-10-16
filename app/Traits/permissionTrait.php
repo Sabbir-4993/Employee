@@ -29,6 +29,22 @@ trait permissionTrait{
             return abort(401);
         }
 
+        //for Project
+        if (!isset(auth()->user()->role->permission['name']['project']['can-add']) && \Route::is('projects.create')){
+            return abort(401);
+        }
+        if (!isset(auth()->user()->role->permission['name']['project']['can-list']) && \Route::is('projects.index')){
+            return abort(401);
+        }
+
+        //for Requisition
+        if (!isset(auth()->user()->role->permission['name']['requisition']['can-add']) && \Route::is('requisitions.create')){
+            return abort(401);
+        }
+        if (!isset(auth()->user()->role->permission['name']['requisition']['can-list']) && \Route::is('requisitions.index')){
+            return abort(401);
+        }
+
         //for Permissions
         if (!isset(auth()->user()->role->permission['name']['permission']['can-add']) && \Route::is('permissions.create')){
             return abort(401);
