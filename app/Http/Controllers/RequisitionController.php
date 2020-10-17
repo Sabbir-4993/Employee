@@ -35,7 +35,27 @@ class RequisitionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        $this->validate($request,[
+//            'user_id'=>'required',
+//            'project_name'=>'',
+//            'date'=>'',
+//            'mobile_number'=>'',
+//            'address'=>'',
+//            ]);
+
+        $requsition = new requsition;
+         $data = $request->all();
+         for ($i = 1; $i > count($request->requsition); $i++){
+             $requsition[] = [
+                 'user_id' => Auth::User()->name,
+                 'project_name' => 'required',
+                 'date' => 'required',
+                 'mobile_number'=>'required',
+                 'address'=>'required',
+
+             ];
+         }
+         dd($requsition);
     }
 
     /**

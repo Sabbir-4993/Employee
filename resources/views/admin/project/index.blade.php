@@ -20,6 +20,7 @@
                     <thead>
                     <tr>
                         <th>SN</th>
+                        <th>Company / Client Name</th>
                         <th>Project Name</th>
                         <th>Address</th>
                         <th>Start Date</th>
@@ -36,6 +37,7 @@
                         @foreach($projects as $key => $project)
                             <tr>
                                 <td>{{$key+1}}</td>
+                                <td class="">{{$project->company_name}}</td>
                                 <td class="">{{$project->project_name}}</td>
                                 <td class="">{{$project->address}}</td>
                                 <td>{{$project->project_start}}</td>

@@ -25,6 +25,16 @@
                                 <div class="card-header">{{ __('Project Information') }}</div>
                                 <div class="card-body">
                                     <div class="form-group">
+                                        <label for="">Company / Client Name</label>
+                                        <input type="text" name="company_name" class="form-control @error('company_name') is-invalid @enderror" required="">
+                                        @error('company_name')
+                                        <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
                                         <label for="">Project Name</label>
                                         <input type="text" name="project_name" class="form-control @error('project_name') is-invalid @enderror" required="">
                                         @error('project_name')

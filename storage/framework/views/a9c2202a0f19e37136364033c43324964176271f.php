@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
 
     <div class="container mt-5">
@@ -121,7 +123,7 @@ unset($__errorArgs, $__bag); ?>
 
                                     <div class="form-group">
                                         <label for="">Joining Date</label>
-                                        <input type="date" name="start_form" class="form-control" placeholder="dd-mm-yyyy" required="">
+                                        <input type="text" name="start_form" class="form-control" placeholder="dd-mm-yyyy" required="" id="datepicker">
                                     </div>
 
                                     <div class="form-group">

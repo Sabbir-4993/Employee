@@ -20,7 +20,8 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo e(asset('template/dist/assets/demo/datatables-demo.js')); ?>"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous"></script>
     <script>
         $( function() {
             $( "#datepicker").datepicker({dateFormat:("yy-mm-dd")}).val();
@@ -30,6 +31,30 @@
         $( function() {
             $( "#datepicker1" ).datepicker({dateFormat:("yy-mm-dd")}).val();
         } );
+    </script>
+    <script type="text/javascript">
+        $('#addRow').on('click', function (){
+            addRow();
+        });
+        function addRow(){
+            var th='<tr>'+
+                '<td><input name="particular[]" class="form-control" type="text" required=""></td>'+
+                '<td><input name="quantity[]" class="form-control" type="number" required=""></td>'+
+                '<td><input name="unit[]" class="form-control" type="text" required=""></td>'+
+                '<td><input name="remarks[]" class="form-control" type="text" required=""></td>'+
+                '<td><a href="#" class="btn btn-danger remove" id="remove"><i class="fa fa-trash"></i></a></td>'+
+                '</tr>';
+            $('tbody').append(th);
+        };
+        $('#remove').live('click', function (){
+            var last=$('tbody tr').length;
+            if(last==1){
+                alert("Can't Delete the last Particulars form");
+            }else {
+                $(this).parent().parent().remove();
+            }
+
+        });
     </script>
     </body>
 </html>
