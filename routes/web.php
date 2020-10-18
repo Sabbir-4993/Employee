@@ -35,6 +35,8 @@ Route::group(['middleware'=>['auth','has.permission']], function(){
 
     Route::resource('leaves', 'LeaveController');
 
+    Route::resource('notices', 'NoticeController');
+
     Route::post('accept-reject-leave/{id}','LeaveController@acceptReject')->name('accept.reject');
 
     Route::resource('projects', 'ProjectController');

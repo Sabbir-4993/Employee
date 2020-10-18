@@ -38,10 +38,10 @@
         });
         function addRow(){
             var th='<tr>'+
-                '<td><input name="particular[]" class="form-control" type="text" required=""></td>'+
-                '<td><input name="quantity[]" class="form-control" type="number" required=""></td>'+
-                '<td><input name="unit[]" class="form-control" type="text" required=""></td>'+
-                '<td><input name="remarks[]" class="form-control" type="text" required=""></td>'+
+                '<td><input name="particular[]" class="form-control" type="text"></td>'+
+                '<td><input name="quantity[]" class="form-control" type="number"></td>'+
+                '<td><input name="unit[]" class="form-control" type="text"></td>'+
+                '<td><input name="remarks[]" class="form-control" type="text"></td>'+
                 '<td><a href="#" class="btn btn-danger remove" id="remove"><i class="fa fa-trash"></i></a></td>'+
                 '</tr>';
             $('tbody').append(th);

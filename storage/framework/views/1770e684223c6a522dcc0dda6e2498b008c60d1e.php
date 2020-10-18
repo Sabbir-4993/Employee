@@ -18,84 +18,21 @@
                 </nav>
                 <form action="<?php echo e(route('requisitions.store')); ?>" method="POST" enctype="multipart/form-data">
                     <?php echo csrf_field(); ?>
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header"><?php echo e(__('Requisition Information')); ?></div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <select class="form-control" name="project_name" id="" >
-                                            <option value="">Select Project</option>
-
-                                            <?php $__currentLoopData = \App\project::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                <option value="<?php echo e($project->id); ?>"><?php echo e($project->project_name); ?></option>
-                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Date</label>
-                                        <input type="text" name="date" class="form-control" placeholder="dd-mm-yyyy"  id="datepicker">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Mobile Number</label>
-                                        <input type="text" name="mobile_number" class="form-control <?php $__errorArgs = ['mobile_number'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" >
-                                        <?php $__errorArgs = ['mobile_number'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                        <span class="invalid-feedback" role="alert">
-                                                <strong><?php echo e($message); ?></strong>
-                                            </span>
-                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="">Address</label>
-                                        <input type="text" name="address" class="form-control <?php $__errorArgs = ['address'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" >
-                                        <?php $__errorArgs = ['address'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                        <span class="invalid-feedback" role="alert">
-                                                <strong><?php echo e($message); ?></strong>
-                                            </span>
-                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="mt-3 row justify-content-center">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header"><?php echo e(__('Requisition Details')); ?></div>
                                 <div class="card-body">
                                     <div class="form-group">
+                                        <div class="form-group">
+                                            <select class="form-control" name="project_name" id="" >
+                                                <option value="">Select Project</option>
+
+                                                <?php $__currentLoopData = \App\project::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <option value="<?php echo e($project->id); ?>"><?php echo e($project->project_name); ?></option>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                            </select>
+                                        </div>
                                         <table class="table table-bordered">
                                             <thead>
                                             <tr>
