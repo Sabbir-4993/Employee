@@ -32,7 +32,7 @@
 
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser" aria-expanded="false" aria-controls="collapsePages">
                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                        Users
+                        Office
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapseUser" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
@@ -82,6 +82,22 @@
                                     {{--                                    @endif--}}
                                     @if(isset(auth()->user()->role->permission['name']['leave']['can-list']))
                                         <a class="nav-link" href="{{route('leaves.index')}}">View Leave</a>
+                                    @endif
+                                </nav>
+                            </div>
+
+                            {{-- Notice menu --}}
+                            <a class="nav-link collapsed" href="{{route('notices.create')}}" data-toggle="collapse" data-target="#pagesCollapseNotice" aria-expanded="false" aria-controls="pagesCollapseError">
+                                Notice
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="pagesCollapseNotice" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    @if(isset(auth()->user()->role->permission['name']['notice']['can-add']))
+                                        <a class="nav-link" href="{{ route('notices.create') }}">Create Notice</a>
+                                    @endif
+                                    @if(isset(auth()->user()->role->permission['name']['notice']['can-list']))
+                                        <a class="nav-link" href="{{route('notices.index')}}">View Notice</a>
                                     @endif
                                 </nav>
                             </div>
@@ -140,15 +156,21 @@
                         </nav>
                     </div>
 
-                    <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="#">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Charts
+                    {{-- mail menu --}}
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMail" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Mail
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <a class="nav-link" href="#">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        Tables
-                    </a>
+                    <div class="collapse" id="collapseMail" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="#">Create</a>
+                            <a class="nav-link" href="#">View</a>
+                        </nav>
+                    </div>
+
+
+
                 </div>
             </div>
             <div class="sb-sidenav-footer">

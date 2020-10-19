@@ -29,92 +29,28 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    <div class="card bg-success text-white mb-4">
-                        <div class="card-body">Success Card</div>
+                    <div class="card bg-danger text-white mb-4">
+                        <div class="card-body">Leaves</div>
+                        <p><i class="fas fa-sign-out-alt fa-fw" style="font-size: 100px"></i></p>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <a class="small text-white stretched-link" href="<?php echo e(route('leaves.index')); ?>" style="font-size: 18px"><?php echo e(App\Leave::all()->count()); ?></a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    <div class="card bg-danger text-white mb-4">
-                        <div class="card-body">Danger Card</div>
+                    <div class="card bg-info text-white mb-4">
+                        <div class="card-body">Projects</div>
+                        <p><i class="fas fa-project-diagram" style="font-size: 100px"></i></p>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <a class="small text-white stretched-link" href="<?php echo e(route('projects.index')); ?>" style="font-size: 18px"><?php echo e(App\project::all()->count()); ?></a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                        </div>si
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-chart-area mr-1"></i>
-                            Area Chart Example
                         </div>
-                        <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-chart-bar mr-1"></i>
-                            Bar Chart Example
-                        </div>
-                        <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-table mr-1"></i>
-                    DataTable Example
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 <?php /**PATH C:\xampp\htdocs\EMS\Employee\resources\views/admin/layouts/content.blade.php ENDPATH**/ ?>

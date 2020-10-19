@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -55,6 +53,14 @@
                                             <td><input type="checkbox" name="name[user][can-delete]" <?php if(isset($permission['name']['user']['can-delete'])): ?> checked <?php endif; ?> value="1"></td>
                                             <td><input type="checkbox" name="name[user][can-add]" <?php if(isset($permission['name']['user']['can-add'])): ?> checked <?php endif; ?> value="1"></td>
                                             <td><input type="checkbox" name="name[user][can-list]" <?php if(isset($permission['name']['user']['can-list'])): ?> checked <?php endif; ?> value="1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Notice</td>
+                                            <td><input type="checkbox" name="name[notice][can-view]" <?php if(isset($permission['name']['notice']['can-view'])): ?> checked <?php endif; ?> value="1"></td>
+                                            <td><input type="checkbox" name="name[notice][can-edit]" <?php if(isset($permission['name']['notice']['can-edit'])): ?> checked <?php endif; ?> value="1"></td>
+                                            <td><input type="checkbox" name="name[notice][can-delete]" <?php if(isset($permission['name']['notice']['can-delete'])): ?> checked <?php endif; ?> value="1"></td>
+                                            <td><input type="checkbox" name="name[notice][can-add]" <?php if(isset($permission['name']['notice']['can-add'])): ?> checked <?php endif; ?> value="1"></td>
+                                            <td><input type="checkbox" name="name[notice][can-list]" <?php if(isset($permission['name']['notice']['can-list'])): ?> checked <?php endif; ?> value="1"></td>
                                         </tr>
                                         <tr>
                                             <td>Project</td>

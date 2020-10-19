@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Notice;
 
 class NoticeController extends Controller
 {
@@ -13,7 +14,8 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        //
+        $notices = Notice::latest()->get();
+        return view('admin.notice.index',compact('notices'));
     }
 
     /**
@@ -34,7 +36,14 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title'=>'required',
+            'description'=>'required',
+            'date'=>'required',
+            'name'=>'required',
+        ]);
+        Notice::create($request->all());
+        return redirect()->back()->with('message', 'Notice Created Successfully');
     }
 
     /**
@@ -56,7 +65,8 @@ class NoticeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $notice = Notice::find($id);
+        return view('admin.notice.edit',compact('notice'));
     }
 
     /**
@@ -68,7 +78,9 @@ class NoticeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $notice = Notice::find($id);
+        $notice->update($request->all());
+        return redirect()->route('notices.index')->with('message','Notices Successfully');
     }
 
     /**
@@ -79,6 +91,7 @@ class NoticeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Notice::find($id)->delete();
+        return redirect()->route('notices.index')->with('message', 'Notice Delete Successfully');
     }
 }

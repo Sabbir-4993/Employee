@@ -42,6 +42,10 @@ Route::group(['middleware'=>['auth','has.permission']], function(){
     Route::resource('projects', 'ProjectController');
 
     Route::resource('requisitions', 'RequisitionController');
+
+    Route::get('/mail','MailController@create');
+
+    Route::Post('/mail','MailController@store')->name('mails.store');
 });
 
 Auth::routes();

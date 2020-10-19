@@ -16,7 +16,7 @@ class CreateRequisitionsTable extends Migration
         Schema::create('requisitions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('project_name');
+            $table->string('project_id');
             $table->string('particular');
             $table->string('quantity');
             $table->string('unit');

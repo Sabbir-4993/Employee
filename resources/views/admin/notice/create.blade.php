@@ -23,7 +23,7 @@
                                 @error('title')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
+                                    </span>no
                                 @enderror
                             </div>
                             <div class="form-group">
@@ -47,16 +47,18 @@
                             </div>
 
                             <div class="form-group">
-                                <label>From Date</label>
-                                <input type="text" name="date" class="form-control" placeholder="dd-mm-yyyy" required="" id="datepicker">
-                                @error('date')
+                                <label>Created By</label>
+                                <input type="text" name="name" class="form-control" required="" value="{{auth()->user()->name}}">
+                                @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                             <div class="form-group">
+                                @if(isset(auth()->user()->role->permission['name']['notice']['can-add']))
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                @endif
                             </div>
                         </div>
                     </div>
